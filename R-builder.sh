@@ -1,12 +1,10 @@
 #Versions
 RVER=R-3.3.2
-GCCVER=gcc-5.2.0
 
 #Folder locations
 INSTALLDIR=/opt/R-3.3.2
 BUILDDIR=~/$RVER-BUILD
-GCCDIR=/opt/$GCCVER
-#Currently using download links. Should download them to local disk and keep them as a bundle, or look into alternatives.
+GCCDIR=/opt/gcc-5.2.0
 
 #SETUP BUILD ENVIRONMENT
 cd ~
@@ -263,7 +261,7 @@ else
     kill $$
 fi
 
-#Install R
+#Install R and check to see if R built correctly.
 touch doc/NEWS.pdf
 make PREFIX=$INSTALLDIR install
 if [ $? -eq 0 ]; then
