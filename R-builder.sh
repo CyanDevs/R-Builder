@@ -2,7 +2,7 @@
 RVER=R-3.3.2
 
 #Folder locations
-INSTALLDIR=/opt/R-3.3.2
+INSTALLDIR=/opt/$RVER
 BUILDDIR=~/$RVER-BUILD
 GCCDIR=/opt/gcc-5.2.0
 
